@@ -1,0 +1,77 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Urbanist', sans-serif; */
+
+/* font-family: 'Noto Sans', sans-serif; */
+/* border: 1px solid black; */
+/* .product-left{
+    border: 1px solid black;
+} */
+/* border: 1px solid black; */
+/* border: 1px solid black; */
+/* font-size: 15px; */
+
+
+.products{
+    display: flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+
+}
+.product-right{
+    
+    margin: 0 10px;
+}
+.product-right>h3{
+    font-size: 20px;
+    margin: 5px 0px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.product-right>p{
+    margin: 5px 0;
+    font-size: 14px;
+} 
+.product-right>span{
+    font-weight: 600;
+}
+.product-img{
+
+    /* border: 1px solid black; */
+    max-width:200px ;
+    margin: 10px;
+}
+.product-btn{
+    margin-top: 7px;
+    width: fit-content;
+}
+.product-btn>button{
+    padding: 5px;
+    margin: 0px 20px 0px 0px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 4px;
+    font-size: 12px;
+}
+.price{
+    font-weight: 600;
+}
+.upload-date{
+    font-size: 9px;
+    color: rgb(180, 180, 180);
+}
+.addbtn{
+    background-color: #581b98;
+    color: #ffffff;
+    border: 1px solid #430e7c;
+
+}
+.removebtn{
+    background-color: #fc5185;
+    color: #ffffff;
+    border: 1px solid #f71b5d;
+    font-family: 'Rubik', sans-serif;
+}

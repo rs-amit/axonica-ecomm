@@ -1,0 +1,45 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Urbanist', sans-serif; */
+
+.home{
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+.home-left{
+    flex: 0.8;
+    margin: auto;
+}
+.home-right{
+    flex: 0.25;
+    border-left: 1px solid rgb(236, 236, 236);
+}
+.home-right-wrap{
+    /* border: 1px solid black; */
+    max-width: 250px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.optimize{
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+}
+
+.optimize>h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+.optimize>div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 20px;
+}
+
+.product-container{
+    max-width: 980px;
+    margin: auto;
+}
