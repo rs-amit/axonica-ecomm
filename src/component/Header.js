@@ -26,7 +26,5 @@ function Header() {
     );
 }
 
-{/* <span>SIGHIN</span>
-<span>LOGIN</span> */}
 
 export default Header;

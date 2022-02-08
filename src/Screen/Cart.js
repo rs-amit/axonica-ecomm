@@ -28,8 +28,6 @@ function Cart() {
     }
 
 
-    // (item.price * item.quantity) + price, 0
-
     return (
         <div className='cart'>
             <div className='cart-wrap'>

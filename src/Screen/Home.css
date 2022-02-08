@@ -1,11 +1,5 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Inter', sans-serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Urbanist', sans-serif; */
 
 .home{
-    /* border: 1px solid black; */
     display: flex;
 
 }
@@ -15,14 +9,12 @@ font-family: 'Urbanist', sans-serif; */
 }
 
 .home-right-wrap{
-    /* border: 1px solid black; */
     max-width: 250px;
     margin: auto;
     margin-top: 20px;
 }
 
 .optimize{
-    /* border: 1px solid black; */
     margin-bottom: 30px;
 }
 
