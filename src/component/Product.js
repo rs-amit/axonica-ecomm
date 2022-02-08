@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import "./Product.css";
 import { format } from 'timeago.js';
 import axios from "axios"
-import { StateHandler } from "../context/StoreContext"
+import { StateHandler } from "../context/StoreContext";
+import { useNavigate } from "react-router-dom";
+
 
 function Product({ product, setProducts }) {
 
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
     const { cart, dispatch } = StateHandler()
     console.log(cart)
+    let navigate = useNavigate();
 
     //--------------------------increment number of data---------------------------
     const IncrementHandler = () => {
@@ -20,7 +23,6 @@ function Product({ product, setProducts }) {
         }
     }
 
-    //----------------------------cart data------------------------------------------
     useEffect(() => {
         const cartHandler = async () => {
             const res = await axios.get("https://server.jerryroy.repl.co/api/cart");
@@ -42,23 +44,14 @@ function Product({ product, setProducts }) {
             })
             console.log(res.data.cart)
             dispatch({ type: "GETDATA-SUCCESSFULL", PayLoad: res.data.cart })
+            navigate("/cart");
 
         } catch (error) {
             console.log(error.response?.data.message)
         }
     }
 
-    // const postaddHandler = async () => {
-    //     const res = await axios.post('https://server.jerryroy.repl.co/api/product', {
-    //         title: "Godrej No. 1 Bathing Soap",
-    //         image: "https://m.media-amazon.com/images/I/61Z5d+NWSVL._SL1200_.jpg",
-    //         disc: "Godrej No. 1 Bathing Soap Lime & Aloe Vera – Grade 1 Soap & Long-lasting Fragrance, Combo Pack of 4 (150g each)",
-    //         price: "48"
-    //     })
-    //     console.log(res.data)
-    // }
-
-    //--------------------------------------- remove----------------------------------
+//---------------------------- remove product from home-----------------------------
 
     const RemoveHandler = async (id) => {
         try {
@@ -71,7 +64,6 @@ function Product({ product, setProducts }) {
 
     return (
         <>
-            {/* <button onClick={postaddHandler}>add</button> */}
             <div className='products'>
 
                 <div className='product-left'>
@@ -82,7 +74,7 @@ function Product({ product, setProducts }) {
                     <p>{product.disc}</p>
                     <p className='price'>₹ {product.price}</p>
                     <p className='upload-date'>{format(product.createdAt)}</p>
-                    <div>
+                    <div className="qunatity-counter">
                         <button onClick={IncrementHandler}>+</button>
                         <span>{quantity}</span>
                         <button onClick={DecrementHandler}>-</button>

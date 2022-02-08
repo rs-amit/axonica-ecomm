@@ -1,50 +1,36 @@
-/* font-family: 'Inconsolata', monospace;
-font-family: 'Inter', sans-serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Urbanist', sans-serif; */
-
-/* font-family: 'Noto Sans', sans-serif; */
-/* border: 1px solid black; */
-/* .product-left{
-    border: 1px solid black;
-} */
-/* border: 1px solid black; */
-/* border: 1px solid black; */
-/* font-size: 15px; */
-
 
 .products{
     display: flex;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    
-
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
+
 .product-right{
-    
     margin: 0 10px;
 }
+
 .product-right>h3{
     font-size: 20px;
     margin: 5px 0px;
     font-family: 'Noto Sans', sans-serif;
-
 }
+
 .product-right>p{
     margin: 5px 0;
     font-size: 14px;
 } 
+
 .product-right>span{
     font-weight: 600;
 }
-.product-img{
 
-    /* border: 1px solid black; */
+.product-img{
     max-width:200px ;
     margin: 10px;
 }
+
 .product-btn{
     margin-top: 7px;
     width: fit-content;
@@ -69,9 +55,28 @@ font-family: 'Urbanist', sans-serif; */
     border: 1px solid #430e7c;
 
 }
+.qunatity-counter{
+    width: fit-content;
+    margin: 10px 0;
+}
+.qunatity-counter>span{
+  margin: 0 8px;
+}
+.qunatity-counter>button{
+   border-radius: 50%;
+   border: 1px solid rgb(230, 230, 230);
+}
 .removebtn{
     background-color: #fc5185;
     color: #ffffff;
     border: 1px solid #f71b5d;
     font-family: 'Rubik', sans-serif;
+}
+
+@media(max-width:600px){
+    .products{
+       flex-direction: column;
+       padding-bottom: 30px;
+    }
+
 }

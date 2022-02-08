@@ -13,10 +13,7 @@ font-family: 'Urbanist', sans-serif; */
     flex: 0.8;
     margin: auto;
 }
-.home-right{
-    flex: 0.25;
-    border-left: 1px solid rgb(236, 236, 236);
-}
+
 .home-right-wrap{
     /* border: 1px solid black; */
     max-width: 250px;
@@ -42,4 +39,11 @@ font-family: 'Urbanist', sans-serif; */
 .product-container{
     max-width: 980px;
     margin: auto;
+}
+@media(max-width:700px){
+    .home-left{
+        flex: 1;
+        margin:0;
+    }
+
 }
